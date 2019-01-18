@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>소수 구하기 프로그램</title>
+		<style>
+			#result, #in>form>*{
+				font-size: 30px;
+				height: 100%;
+				font-family: sans-serif;
+				white-space: pre-wrap;
+				background-color: #FFF;
+				border: 1px gray solid;
+				font-weight: 300;
+				color: #383838;
+			}
+			#result{
+				border: none;
+			}
+			.org {
+				color: orange;
+			}
+			body {
+				margin: 15px;
+			}
+
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+					/* display: none; <- Crashes Chrome on hover */
+					-webkit-appearance: none;
+					margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+			}
+		</style>
+  </head>
+  <body>
+		<div id="in">
+			<form action="javascript:null;">
+				<input type="number" id="i">
+				<input type="submit" value="실행" id="button">
+			</form>
+
+			<div id="result">
+			</div>
+		</div>
+
+    <script type="text/javascript" src="script_2.js"></script>
+  </body>
+</html>
